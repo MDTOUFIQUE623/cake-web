@@ -1,0 +1,103 @@
+.explore-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+    margin-top: -50px;
+}
+.explore-menu h1{
+    color: #262626;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.explore-menu-text{
+    max-width: 60%;
+    color: #808080;
+    margin-bottom: 0;
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 65px;
+    text-align: center;
+    margin: 10px 0px;
+    overflow-x: auto;
+    padding: 5px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+}
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+.explore-menu-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    min-width: clamp(150px, 200px, 250px);
+    cursor: pointer;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.explore-menu-list-item:hover {
+    transform: scale(1.02);
+}
+.explore-menu-list-item img {
+    width: clamp(120px, 170px, 200px);
+    height: clamp(120px, 170px, 200px);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #FFE4E1;
+    padding: 3px;
+    background-color: #fff;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    will-change: transform, border-color, box-shadow;
+}
+.explore-menu-list-item:hover img {
+    border-color: #FFB6C1;
+    transform: scale(1.03);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.explore-menu-list-item p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #49557e;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.explore-menu hr{
+    margin: 0;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.explore-menu-list-item .active{
+    border: 4px solid #FFB6C1;
+    padding: 2px;
+    transform: scale(1.02);
+}
+@media (max-width:1050px) {
+    .explore-menu-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .explore-menu-list {
+        gap: 25px;
+    }
+    
+    .explore-menu h1 {
+        font-size: 24px;
+    }
+}

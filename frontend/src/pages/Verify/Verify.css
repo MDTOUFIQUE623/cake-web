@@ -1,0 +1,26 @@
+.verify{
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+}
+.verify-content{
+    text-align: center;
+}
+.verify .spinner{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+    border: 3px solid #f0f0f0;
+    border-top-color: #f663b4;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+.verify p{
+    color: #666;
+    font-size: 1.1rem;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}

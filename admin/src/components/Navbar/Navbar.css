@@ -1,0 +1,46 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 4%;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+.navbar .logo{
+    width: max(8%,70px);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.navbar .logo:hover{
+    transform: scale(1.05);
+}
+.navbar .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.navbar .profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar .profile:hover{
+    transform: scale(1.05);
+    border: 2px solid rgb(240, 122, 142);
+    box-shadow: 0 4px 12px rgba(240, 122, 142, 0.2);
+}
+.navbar .profile:active{
+    transform: scale(0.95);
+}
+.navbar .admin-text{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}

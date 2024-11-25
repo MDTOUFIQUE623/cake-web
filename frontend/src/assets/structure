@@ -1,0 +1,9 @@
+src/
+├── assets/
+│   ├── basket_icon.png
+│   ├── logo.png
+│   ├── header_img.png
+│   ├── search_icon.png
+│   ├── menu_1.png
+│   ├── menu_2.png
+│   └── ... (all other images)
